@@ -26,17 +26,26 @@
 
 // const usd = 19.75;
 // const pounds = 0.78;
-// 
+
 // function convertCurrency (curency,conversionRate){
-        // const curreturn = curency * conversionRate;
-        // return curreturn;
+//         const curreturn = curency * conversionRate;
+//         return curreturn;
 // }
 // console.log (convertCurrency(usd,pounds));
-// const result = convertCurrency(usd,pounds)
-// 
-// const name = 'zhuopu'
+// const result = convertCurrency(usd,pounds);
+
 // console.log(`${usd.toFixed(2)} in USD is ${result.toFixed(2)} pounds`)
 
+const Fah = 100
+const cel= 32
 
 
-const 
+
+function converttemp (temp1) {
+    const returntemp = (temp1 - 32) * 5/9
+    return ((temp1 -32) * 5/9).toFixed(0)
+}
+
+const res = converttemp(Fah)
+console.log("100 in Fahrenheit is", res);
+
