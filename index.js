@@ -36,16 +36,45 @@
 
 // console.log(`${usd.toFixed(2)} in USD is ${result.toFixed(2)} pounds`)
 
+// const Fah = 100
+// const cel= 32
+
+
+
+// function converttemp (temp1) {
+//     const returntemp = (temp1 - 32) * 5/9
+//     return ((temp1 -32) * 5/9).toFixed(0)
+// }
+
+// const res = converttemp(Fah)
+// console.log("100 in Fahrenheit is", res);
+
+
 const Fah = 100
-const cel= 32
+const Cel = 37
 
-
-
-function converttemp (temp1) {
-    const returntemp = (temp1 - 32) * 5/9
+function converttemp (temp1) { 
+    const returntemp = (temp1 -32) * 5/9
     return ((temp1 -32) * 5/9).toFixed(0)
 }
 
-const res = converttemp(Fah)
-console.log("100 in Fahrenheit is", res);
+    const res = converttemp (Fah)
+    console.log("100 in Fahrenheit is", res, "in Celsius");
 
+
+function converttemp2 (temp1) {
+    const returntemp2 = (temp1- 32) * 5/9 + 273.15
+    return ((temp1- 32) * 5/9 + 273.15).toFixed(0)
+
+}
+
+    const res2 = converttemp2(Fah)
+    console.log (" 100 in Fahrenheit is", res2, "in Kelvin");
+
+function converttemp3 (temp3) {
+    const returntemp3 = ((temp3 * 9/5) + 32)
+    return ((temp3 * 9/5) + 32)
+}
+
+const res3 = converttemp3(Cel)
+console.log(" 37 degrees in Celsius is", res3, "in Fahrenheit")
